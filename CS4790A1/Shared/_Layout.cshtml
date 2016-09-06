@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="@Href("~/Shared/style.css")" type="text/css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                @RenderPage("~/Shared/_Header.cshtml")
+            </header>
+            <div>
+                <ul>
+                    <li><a href="~/Locations.cshtml">Locations</a></li>
+                    <li><a href="~/Order.cshtml">Place Order</a></li>
+                    <li><a href="~/OrderDetails.cshtml">Order Details</a></li>
+                </ul>
+            </div>
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+    </body>
+</html>

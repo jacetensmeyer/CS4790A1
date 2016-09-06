@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @{ 
+        string[] food = { "Sandwich", "Hamburger", "Salad" };
+        string[] drink = { "Water", "Rootbeer", "Sprite" };
+        string[] dessert = { "Cookie", "Chips" };
+    }
+    <form>
+        <h3>Food</h3>
+        <select>
+            @foreach(var item in food)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <h3>Drink</h3>
+        <select>
+            @foreach (var item in drink)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <h3>Dessert</h3>
+        <select>
+            @foreach (var item in dessert)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

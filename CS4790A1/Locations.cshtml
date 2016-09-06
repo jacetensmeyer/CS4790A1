@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <br />
+        <table>
+            @{
+                string[] colType = { "City", "State", "Zip", "Address" };
+                string[] california = { "Los Angeles", "CA", "11111", "1st street" };
+                string[] utah = { "Salt Lake City", "UT", "22222", "2nd street" };
+                string[] navada = { "Los Vegas", "NV", "33333", "3rd street" };
+                <tr>
+                    @foreach (var col in colType){<th>@col</th>}
+                </tr>
+                <tr>@foreach(var col in california) { <td>@col</td>}</tr>
+                <tr>@foreach (var col in navada){<td>@col</td>}</tr>
+                <tr>@foreach (var col in utah){<td>@col</td>}</tr>
+            }
+        </table>
+    </body>
+</html>
