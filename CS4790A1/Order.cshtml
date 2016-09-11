@@ -8,32 +8,22 @@
 </head>
 <body>
     @{ 
-        string[] food = { "Sandwich", "Hamburger", "Salad" };
-        string[] drink = { "Water", "Rootbeer", "Sprite" };
-        string[] dessert = { "Cookie", "Chips" };
+        //string[] food = { "Sandwich", "Hamburger", "Salad" };
+        //string[] drink = { "Water", "Rootbeer", "Sprite" };
+        //string[] dessert = { "Cookie", "Chips" };
     }
-    <form>
+    <form method="get" action="~/OrderDetails.cshtml">
         <h3>Food</h3>
-        <select>
-            @foreach(var item in food)
-            {
-                <option value="@item">@item</option>
-            }
-        </select>
+        Sandwich:<input type="checkbox" value="Sandwich" name="Food" />
+        Hamburger:<input type="checkbox" value="Hamburger" name="Food" />
+        Salad:<input type="checkbox" value="Salad" name="Food" /> 
         <h3>Drink</h3>
-        <select>
-            @foreach (var item in drink)
-            {
-                <option value="@item">@item</option>
-            }
-        </select>
+        Water:<input type="checkbox" value="Water" name="Drink" />
+        Rootbeer:<input type="checkbox" value="Rootbeer" name="Drink" />
+        Sprite:<input type="checkbox" value="Sprite" name="Drink" /> 
         <h3>Dessert</h3>
-        <select>
-            @foreach (var item in dessert)
-            {
-                <option value="@item">@item</option>
-            }
-        </select>
+        Cookie:<input type="checkbox" value="Cookie" name="Dessert" />
+        Chips:<input type="checkbox" value="Chips" name="Dessert" />
         <br />
         <br />
         <br />

@@ -9,16 +9,20 @@
             <header>
                 @RenderPage("~/Shared/_Header.cshtml")
             </header>
+            <br />
             <div>
                 <ul>
                     <li><a href="~/Locations.cshtml">Locations</a></li>
                     <li><a href="~/Order.cshtml">Place Order</a></li>
-                    <li><a href="~/OrderDetails.cshtml">Order Details</a></li>
+                    <li><a href="~/ContactUs.cshtml">Contact Us</a></li>
                 </ul>
             </div>
             <div>
                 @RenderBody()
             </div>
+            <footer>
+                @RenderPage("~/Shared/_Footer.cshtml")
+            </footer>
         </div>
     </body>
 </html>

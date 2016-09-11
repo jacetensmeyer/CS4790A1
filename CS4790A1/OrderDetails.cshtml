@@ -7,6 +7,36 @@
     <title></title>
 </head>
 <body>
-    
+    @{ var food = Request["food"]; var drink = Request["drink"]; var dessert = Request["dessert"]; } @*<h2>Order Details</h2><h3>Food Items</h3>@food <h3>Drinks</h3>@drink <h3>Desserts</h3>@dessert*@
+    <h2>Order Details</h2>
+    <table>
+        <tr>
+            <td>Food Items: </td>
+            <td>
+            @foreach (var item in food)
+            {
+                @item
+            }
+            </td>
+        </tr>
+        <tr>
+            <td>Drinks: </td>
+            <td>
+            @foreach (var item in drink)
+            {
+                @item
+            }
+            </td>
+        </tr>
+        <tr>
+            <td>Desserts: </td>
+            <td>
+            @foreach (var item in dessert)
+            {
+                @item
+            }
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

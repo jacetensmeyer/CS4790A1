@@ -96,6 +96,8 @@
     <Content Include="Shared\_Header.cshtml" />
     <Content Include="Order.cshtml" />
     <Content Include="OrderDetails.cshtml" />
+    <Content Include="Shared\_Footer.cshtml" />
+    <Content Include="ContactUs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
