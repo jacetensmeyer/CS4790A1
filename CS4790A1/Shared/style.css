@@ -1,7 +1,7 @@
 ﻿.wrapper {margin: 0 auto 0 auto; width: 85%;}
-header{background-color: #a292ff; height: 100px; clear: both; text-align:center;}
+header{background-color: #a292ff; line-height:100px; height: 100px; clear: both; text-align:center;}
 footer{background-color: #a292ff; height: 100px; clear: both; text-align:center;}
-body{background-color: #92dcff;}
+body{background-color: #92dcff !important;}
 table{background-color: #92ffb5;}
 ul{
     list-style-type: none;
@@ -23,4 +23,19 @@ li a{
 }
 li a:hover{
     background-color:#92dcff;
+}
+
+img{
+    width:100px;
+    height:100px;
+    min-width:100px;
+    min-height:100px;
+}
+
+.imgBlock{
+    width:100%;
+}
+
+.imgContainer{
+    float:left;
 }

@@ -7,9 +7,13 @@
     <title></title>
 </head>
 <body>
-    @{ var food = Request["food"]; var drink = Request["drink"]; var dessert = Request["dessert"]; } @*<h2>Order Details</h2><h3>Food Items</h3>@food <h3>Drinks</h3>@drink <h3>Desserts</h3>@dessert*@
+    @{ var name = Request["name"]; var food = Request["food"]; var drink = Request["drink"]; var dessert = Request["dessert"]; var tip = Request["tip"]; } @*<h2>Order Details</h2><h3>Food Items</h3>@food <h3>Drinks</h3>@drink <h3>Desserts</h3>@dessert*@
     <h2>Order Details</h2>
-    <table>
+    <table class="table table-hover">
+        <tr>
+            <td>Customer Name: </td>
+            <td>@name</td>
+        </tr>
         <tr>
             <td>Food Items: </td>
             <td>
@@ -36,6 +40,10 @@
                 @item
             }
             </td>
+        </tr>
+        <tr>
+            <td>Tip:</td>
+            <td>$@tip</td>
         </tr>
     </table>
 </body>

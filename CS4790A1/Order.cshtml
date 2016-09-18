@@ -12,7 +12,8 @@
         //string[] drink = { "Water", "Rootbeer", "Sprite" };
         //string[] dessert = { "Cookie", "Chips" };
     }
-    <form method="get" action="~/OrderDetails.cshtml">
+    @*<form method="get" action="~/OrderDetails.cshtml">
+        Name:<input type="text" value="Name" name="Name" />
         <h3>Food</h3>
         Sandwich:<input type="checkbox" value="Sandwich" name="Food" />
         Hamburger:<input type="checkbox" value="Hamburger" name="Food" />
@@ -29,6 +30,100 @@
         <br />
         <br />
         <input type="submit" value="Submit">
+    </form>*@
+    <form method="get" action="~/OrderDetails.cshtml">
+        <h3>Name</h3>
+        <div class="form-group">
+            <input class="form-control" type="text" name="Name" />
+        </div>
+
+        <h3>Food<small><small> (Select 1 or more)</small></small></h3>
+        <div class="imgBlock">
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/sandwich.jpg" alt="Icon">
+            </div>
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/hamburger.jpg" alt="Icon">
+            </div>
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/salad.jpg" alt="Icon">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="form-control">
+            <p class="col-xs-4">Sandwich:<input type="checkbox" value="Sandwich" name="Food" /></p>
+            <p class="col-xs-4">Hamburger:<input type="checkbox" value="Hamburger" name="Food" /></p>
+            <p class="col-xs-4">Salad:<input type="checkbox" value="Salad" name="Food" /></p>
+        </div>
+        
+        <h3>Drink<small><small> (Select 1 or more)</small></small></h3>
+        <div class="imgBlock">
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/water.jpg" alt="Icon">
+            </div>
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/rootbeer.jpg" alt="Icon">
+            </div>
+            <div class="imgContainer col-xs-4">
+                <img class="img-responsive img-rounded" src="~/images/sprite.jpg" alt="Icon">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="form-control">
+            <p class="col-xs-4">Water:<input type="checkbox" value="Water" name="Drink" /></p>
+            <p class="col-xs-4">Rootbeer:<input type="checkbox" value="Rootbeer" name="Drink" /></p>
+            <p class="col-xs-4">Sprite:<input type="checkbox" value="Sprite" name="Drink" /></p>
+        </div>
+        
+        <h3>Dessert<small><small> (Select 1 or more)</small></small></h3>
+        <div class="imgBlock">
+            <div class="imgContainer col-xs-6">
+                <img class="img-responsive img-rounded" src="~/images/cookie.jpg" alt="Icon">
+            </div>
+            <div class="imgContainer col-xs-6">
+                <img class="img-responsive img-rounded" src="~/images/brownie.jpg" alt="Icon">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="form-control">
+            <p class="col-xs-6">Cookie:<input type="checkbox" value="Cookie" name="Dessert" /></p>
+            <p class="col-xs-6">Chips:<input type="checkbox" value="Chips" name="Dessert" /></p>
+        </div>
+
+        <h3>Tip</h3>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Tip (in dollars)</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" name="tip">
+            </div>
+        </div>
+        
+        <br />
+        <br />
+        <a class="btn btn-default" href="~/Order.cshtml">Cancel</a>
+        <input class="btn btn-default glyphicon-ok" type="submit" value="Submit">
     </form>
 </body>
 </html>
